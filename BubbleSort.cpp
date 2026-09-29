@@ -2,28 +2,28 @@
 	Name: BubbleSort.cpp
 	Author: Giovanni Tonsa
 	Date: 15/09/26 11:21
-	Description: ImplementaÁ„o do mÈtodo de ordenaÁ„o Bubble Sort
+	Description: Implementa√ß√£o do m√©todo de ordena√ß√£o Bubble Sort
 */
 
 # include <stdio.h>
 
-//prototipaÁ„o
+//prototipa√ß√£o
 void bubbleSort(int *, int);
 
-//vari·veis globais
+//vari√°veis globais
 int comp =0;
 int trocas = 0;
 
 main()
 {
-	int vet[] = {23, 12, 17, -2, 20, 24, 157, 50, 81, 53, -7};
+	int vet[] = {23, 12, 17, -2, 20, 24, 157, 50, 81, 53};
 	int tam = sizeof(vet)/sizeof(int);
 	
 	puts("Vetor original desordenado: ");
 	for(int i = 0; i < tam; i++)
 		printf("%d|", vet[i]);
 		
-	bubbleSort(vet, tam); //invoke da funÁ„o
+	bubbleSort(vet, tam); //invoke da fun√ß√£o
 	
 	puts("\nVetor original ordenado pelo Bubble Sort: ");
 	for(int i = 0; i < tam; i++)
